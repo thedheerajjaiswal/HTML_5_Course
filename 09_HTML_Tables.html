@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        #orange-table ,#orange-table th , #orange-table td{
+            border: 2px solid orangered;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial,sans-serif;
+            padding: 15px;
+        }
+        #orange-table{
+            width: 100%;
+            box-shadow: 0 5px 10px black;
+        }
+        #orange-table thead{
+            background-color: orangered;
+            color: whitesmoke;
+        }
+        #orange-table tbody{
+            background-color: lightsalmon;
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        simple table
+        table row span
+        table col span
+        custom table with css
+    -->
+<h2>Simple Table</h2>
+<table border="2">
+    <thead>
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>COMPANY</th>
+            <th>LOCATION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <th>DHEERAJ</th>
+            <th>INFOSIS</th>
+            <th>DELHI</th>
+        </tr>
+        
+        <tr>
+            <th>2</th>
+            <th>RAJ</th>
+            <th>TCS</th>
+            <th>BANGALORE</th>
+        </tr>
+        
+        <tr>
+            <th>3</th>
+            <th>JAISWAL</th>
+            <th>GENPACT</th>
+            <th>HYDERABAD</th>
+        </tr>
+        
+        <tr>
+            <th>1</th>
+            <th>DHEERAJ</th>
+            <th>INFOSIS</th>
+            <th>DELHI</th>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Table with col span</h2>
+
+<table border="2">
+    <thead>
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th colspan="2">MOBOLE NUMBER</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <th>DHEERAJ</th>
+            <th>8269070703</th>
+            <td>8744815665</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>RAJ</th>
+            <th>8269070707</th>
+            <td>87448156445</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>DHIRAJ</th>
+            <th>823456789</th>
+            <td>9744815665</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>JAISWAL</th>
+            <th>8340717084</th>
+            <td>2744815665</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>Table with rowspan</h2>
+<table border="2">
+    <thead>
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>MOBILE NUMBERS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="2">John</td>
+            <td>9874896454</td>
+        </tr>
+        <tr>
+            <td>8552451526</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2</td>
+            <td rowspan="2">Rajan</td>
+            <td>9874896454</td>
+        </tr>
+        <tr>
+            <td>8552451526</td>
+        </tr>
+    </tbody>
+
+</table>
+<h2>Custom Table</h2>
+    <table  id="orange-table">
+        <thead>
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>COMPANY</th>
+            <th>LOCATION</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Infosys</td>
+            <td>Bangalore</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rajan</td>
+            <td>Oracle</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Wilson</td>
+            <td>HCL</td>
+            <td>Noida</td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

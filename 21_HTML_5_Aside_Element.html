@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Aside Element</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar{
+            background: linear-gradient(45deg,black,yellow);
+            float :left;
+            width: 250px;
+            box-shadow: 0 5px 10px black;
+            text-align: center;
+            height: 100vh;
+            padding: 10px;
+        }
+        .sidebar a {
+            display: block;
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 16px 25px;
+            border-radius: 50px;
+        }
+
+        .sidebar a:hover{
+            background: linear-gradient(45deg,yellow,darkslategray);
+            box-shadow: 0 5px 10px black;  
+        }
+        .sidebar img{
+            width: 150px;
+            height: 150px;
+            border: 10px solid #7a7a00;
+            border-radius: 50%;
+            margin: 50px 0 20px 0;
+            box-shadow: 0 5px 10px black;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- aside tag -->
+ <!-- Sidebar -->
+ <aside class="sidebar">
+    <img src="img/person.jpg" alt="" title="Person">
+    <a href="#">About Me</a>
+    <a href="#">Qualification</a>
+    <a href="#">Experience</a>
+    <a href="#">Certifications</a>
+    <a href="#">Recognition</a>
+    <a href="#">Contact Me</a>
+</aside>
+</body>
+</html>

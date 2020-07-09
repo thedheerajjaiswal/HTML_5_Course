@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fieldset Legend</title>
+<style>
+body{
+    background-image: url("img/breads_2.jpg");
+    color: whitesmoke;
+    font-family:"Comic Sans MS",sans-serif;
+}
+h1{
+    font-family: "Old English Text",sans-serif;
+    text-align: center;
+    text-shadow: 0 3px 3px black;
+}
+fieldset{
+    border: 2px solid whitesmoke;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0 20px 0 20px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 0 10px black;
+}
+legend{
+    background:linear-gradient(45deg,black,darkred);
+    padding: 10px 25px;
+    border: 2px solid whitesmoke;
+    border-radius: 0 20px 0 20px;
+    font-family: "Old English Text MT",sans-serif;
+    font-size: 20px;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+input[type='text'],
+input[type='month'],
+input[type='number']{
+    font-size: 18px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #b38264;
+}
+input[type='text']:focus,
+input[type='month']:focus,
+input[type='number']:focus{
+    background-color: #ba9374;
+}
+</style>
+</head>
+<body>
+
+    <!-- Fieldset , Legend -->
+<h1>Online Job Application</h1>
+<!-------Education Details-------->
+<form>
+<fieldset>
+    <legend>Education Details</legend>
+    <table>
+        <tr>
+            <th>SNo</th>
+            <th>Qualification</th>
+            <th>Institute / University</th>
+            <th>Year Of Passing</th>
+            <th>Marks (%)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                <input type="text">   
+             </td>
+
+             <td>
+                 <input type="text">
+             </td>
+             <td>
+                 <input type="month">
+             </td>
+             <td>
+                 <input type="number" min="0" max="100">             
+                </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <input type="text">   
+             </td>
+
+             <td>
+                 <input type="text">
+             </td>
+             <td>
+                 <input type="month">
+             </td>
+             <td>
+                 <input type="number" min="0" max="100">             
+                </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <input type="text">   
+             </td>
+
+             <td>
+                 <input type="text">
+             </td>
+             <td>
+                 <input type="month">
+             </td>
+             <td>
+                 <input type="number" min="0" max="100">             
+                </td>
+             </tr>
+          </table>
+        </fieldset>
+    </form>
+
+</body>
+</html>

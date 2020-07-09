@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Attributes</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin-bottom: 300px;
+        }
+        form {
+            background: linear-gradient(45deg,black,yellow);
+            color: whitesmoke;
+            padding: 15px;
+            width: 400px;
+            box-shadow: 0 5px 10px black;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Simple Input Field Attributes
+        value,
+        readonly,
+        disabled,
+        size,
+        rows , cols
+    -->
+
+<h2>Value</h2>
+<form >
+<label>User Name</label>
+<input type="text" value="Dheeraj">
+</form>
+
+<h2>Readonly</h2>
+<form> 
+<label>User Name</label>
+<input type="text" value="Dheeraj" disabled>
+<input type="checkbox" disabled>
+<input type="submit" value="Accept" disabled>
+</form>
+
+<h2>Size </h2>
+<form >User Name
+<input type="text" size="40">
+</form>
+
+<h2>Rows , Cols</h2>
+<form>
+<label>Your Comments</label>
+<textarea cols="40" rows="4" maxlength="100"></textarea>
+</form>
+
+<hr>
+
+<h2>required</h2>
+<form>
+<label>User Name*</label>
+<input type="text" required>
+<input type="submit" value="Submit" >
+</form>
+
+<h2>novalidate</h2>
+<form novalidate>
+<label>Enter your Website</label>
+<input type="url">
+<input type="submit" value="Submit">
+</form>
+
+<h2>placeholder</h2>
+<form>
+<input type="text" placeholder="Enter your Name">
+<input type="submit" value="Submit">
+</form>
+
+<h2>Autofocus</h2>
+
+<form>
+<label>User Name </label>
+<input type="text" autofocus>
+<input type="submit" value="Submit">
+</form>
+
+
+<h2>Pattern</h2>
+<form> 
+    <label>Twitter User Name</label>
+    <input type="text" required pattern="^[A-Za-z0-9_]{1.15}$">
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+    <!--
+        HTML5 Input Field Attributes
+        required,
+        novalidate,
+        autofocus,
+        placeholder,
+        pattern
+    -->
+
+
+<br><br><br>
+</body>
+</html>

@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: lightsalmon;
+}
+/* --------------- Main Header --------------*/
+.main-header {
+  background-image: url("img/background2.jpg");
+  padding: 12px;
+  color: white;
+  box-shadow: 0 0 10px black;
+}
+/* --------------- Main Navbar --------------*/
+.main-nav {
+  background-color: black;
+  padding: 5px;
+  box-shadow: 0 0 10px black;
+}
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 25px;
+  display: inline-block;
+}
+.main-nav a:hover {
+  background: linear-gradient(45deg, orangered, darkslategray);
+  border-radius: 50px;
+}
+.main-nav a.active {
+  background: linear-gradient(45deg, darkred, darkslategray);
+  border-radius: 50px;
+}
+/* --------------- sidebar --------------*/
+.sidebar {
+  background-image: url("img/background2.jpg");
+  float: left;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  height: 800px;
+  position: sticky;
+  top: 0;
+}
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 14px 25px;
+}
+.sidebar a:hover {
+  background: linear-gradient(45deg, black, darkred);
+  border-radius: 50px;
+  box-shadow: 0 0 5px white;
+}
+/* ----------------- Main Content Section -------------- */
+.main-content {
+  margin-left: 300px;
+}
+
+.main-content article h2 {
+  color: darkred;
+  font-size: 35px;
+  padding-top: 15px;
+}
+.main-content article p {
+  font-size: 20px;
+  color: black;
+}
+.main-content article img {
+  width: 100px;
+  height: 150px;
+  margin: 0;
+  display: block;
+}
+/* ---------------- Main Footer -------------- */
+footer {
+  background-image: url("img/background2.jpg");
+  padding: 12px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+}
+footer a {
+  color: orange;
+  text-decoration: none;
+  font-size: 18px;
+}

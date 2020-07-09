@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        form{
+            background-color: lightsalmon;
+            padding: 15px;
+            width: 400px;
+            box-shadow: 0 5px 10px black;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        simple Login Form
+        Login Form with Table
+        Select Box
+        Text Area
+        DataList
+    -->
+    <h2>Simple Login Form</h2>
+    <form>
+        <label>User Name</label>
+        <input type="text">
+        <br>
+        <label>Password</label>
+        <input type="password">
+        <br>
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+    </form>
+
+    <h2>Login form with Table</h2>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>User Name</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Login">
+                </td>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Select Box</h2>
+    <form>
+        <label>Select a Technology</label>
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>JQuery</option>
+            <option>Bootstrap</option>
+        </select>
+    </form>
+
+    <h2>Select Box with optgroup</h2>
+    <form>
+        <label>Select a Technology</label>
+        <select>
+            <optgroup label="Frontend">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </optgroup>
+            <optgroup label="ServerSide">
+                <option>Node JS</option>
+                <option>Express JS</option>
+                <option>PHP</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <h2>Text Area Tag</h2>
+    <form>
+        <label>Your Comments</label>
+        <textarea rows="4" cols="40" maxlength="100"></textarea>
+    </form>
+
+    <h2>Datalist tag HTML 5</h2>
+    <form>
+        <label>Select a Technology</label>
+        <input list="tech">
+        <datalist id="tech">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>JQuery</option>
+            <option>Bootstrap</option>
+        </datalist>
+    </form>
+
+
+
+</body>
+</html>

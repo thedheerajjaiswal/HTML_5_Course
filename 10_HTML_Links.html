@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Links</title>
+    <style>
+       html{
+           scroll-behavior: smooth;
+       }
+       body{
+           margin-bottom: 300px;;
+       }
+       h2{
+           background-color: orange;
+           color: white;
+           font-family: "Comic Sans MS", sans-serif;
+           padding: 15px;
+       }
+    </style>
+</head>
+<body>
+
+    <!--
+      simple links (external , local)
+      link with targets
+      images as links
+      download a file
+      Bookmarks with links
+    -->
+    <div id="home">
+        <h2>Home Page</h2>
+    </div>
+    <p>Simple Links with external webpage</p>
+    <a href="http://www.google.co.in" target="_blank">Google</a>
+
+    <p>link with internal webpage</p>
+    <a href="09_HTML_Tables.html">Tables Page</a> |
+    <a href="08_HTML_Images.html">Images Page</a>
+
+    <p>Image as links</p>
+    <a href="https://www.amazon.in/" target="_blank">
+        <img src="https://lh3.googleusercontent.com/G7jAks-PRl4d7IkL-s3Ir44nGyPq0Yh872N5UMwZYIJz4wG1Oj0DqoQjsAR5ddKZbQ" width="200" height="100">
+    </a>
+
+    <p>Send Email</p>
+    <a href="mailto:dheerajjaiswal0781@gmail.com?subject='from HTML Class'">Send Email</a>
+
+    <p>Make Phone Call</p>
+    <a href="tel:8269070703">8269070703</a>
+
+    <p>Download a file</p>
+    <a href="img/Course_Content_UI_Full_Stack.pdf" download="notes">Download  Notes</a>
+
+    <p>Link with Book Mark</p>
+    <a href="#home">go to Home</a>
+
+
+
+</body>
+</html>
